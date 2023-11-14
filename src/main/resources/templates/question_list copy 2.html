@@ -1,0 +1,169 @@
+<html layout:decorate="~{layout}">
+    
+<head>
+    <link rel="stylesheet" href="https://assets.velcdn.com/_next/static/css/fa124b741b65f9f0.css" data-precedence="next">
+    <link rel="stylesheet" href="https://assets.velcdn.com/_next/static/css/392e313bab8c90b0.css" data-precedence="next">
+    <link rel="stylesheet" href="https://assets.velcdn.com/_next/static/css/6a062059d4e69f73.css" data-precedence="next">
+    <script src="https://assets.velcdn.com/_next/static/chunks/3054f790-c4797ec6edde2d55.js" async=""></script>
+    <script src="https://assets.velcdn.com/_next/static/chunks/861-84272c2f9fe0aa32.js" async=""></script>
+    <script src="https://assets.velcdn.com/_next/static/chunks/main-app-12295be799237526.js" async=""></script>
+    <script src="https://assets.velcdn.com/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js" nomodule=""></script>
+</head>
+
+<div layout:fragment="content" class="container my-3">
+	<div class="row my-3">
+        <div class="col-6">
+            <a th:href="@{/question/create}" class="btn btn-primary">새글작성</a>
+        </div>
+        <div class="col-6">
+            <div class="input-group">
+                <input type="text" id="search_kw" class="form-control" th:value="${kw}">
+                <button class="btn btn-outline-secondary" type="button" id="btn_search">찾기</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="BasicLayout_mainWrapper__xXO4A">
+        <main>
+            <div class="PostCardGrid_block__ZeuvW">
+
+                <!--카드 반복-->
+                <div class="PostCard_block__t_0t8 ">
+                    <!-- <a href="https://velog.io/@kyleryu/10살-꼬마-개발자-판교-스타트업-대표가-되다" class="VLink_block__Uwj4P PostCard_styleLink__DYahQ">
+                        <div class="RatioImage_block__iDP9y" style="padding-top: 52.1921%;">
+                            <img alt="10살 꼬마 개발자, 판교 스타트업 대표가 되다. post" fetchpriority="high" width="320" height="167" decoding="async" data-nimg="1" src="https://velog.velcdn.com/images/kyleryu/post/97df121d-628f-4ce4-8d80-ad265f6c3f5e/image.png" style="color: transparent;">
+                        </div>
+                    </a> -->
+                    <div class="PostCard_content__DxJzL">
+                        <a href="https://velog.io/@kyleryu/10살-꼬마-개발자-판교-스타트업-대표가-되다" class="VLink_block__Uwj4P PostCard_styleLink__DYahQ">
+                            <h4 class="PostCard_h4__Yj8PZ utils_ellipsis__M_m5g">10살 꼬마 개발자, 판교 스타트업 대표가 되다.</h4>
+                                <div class="PostCard_descriptionWrapper__x6u1q">
+                                    <p class="PostCard_clamp__jvmBn">7살에 프로그래밍을 접했다. 그리고 2022년, 25살에 스타트업 대표가 되었다.</p>
+                                </div>
+                        </a>
+                        <div class="PostCard_subInfo__aMAtH">
+                            <span>6일 전</span>
+                            <span class="PostCard_separator__Gr24v">·</span>
+                            <span>39개의 댓글</span>
+                        </div>
+                    </div>
+                    <div class="PostCard_footer__CONJG">
+                        <a href="https://velog.io/@kyleryu" class="VLink_block__Uwj4P PostCard_userInfo__yKp_g">
+                            <img alt="user thumbnail of kyleryu" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" src="https://velog.velcdn.com/images/kyleryu/profile/40b250b6-2465-46d7-852c-8d8a8571e7b0/image.png" style="color: transparent;">
+                            <span>by <b>kyleryu</b></span>
+                        </a>
+                        <div class="PostCard_likes__pWcUv">
+                            <svg viewBox="0 0 24 24">
+                                <path fill="currentColor" d="m18 1-6 4-6-4-6 5v7l12 10 12-10V6z"></path>
+                            </svg>76
+                        </div>
+                    </div>
+                </div>
+                <!--카드 반복 End-->
+
+                <!--카드 반복(TEXT) -->
+                <div class="PostCard_block__t_0t8 ">
+                    <a href="https://velog.io/@kyleryu/10살-꼬마-개발자-판교-스타트업-대표가-되다" class="VLink_block__Uwj4P PostCard_styleLink__DYahQ">
+                        <div class="RatioImage_block__iDP9y" style="padding-top: 52.1921%;">
+                            <img alt="10살 꼬마 개발자, 판교 스타트업 대표가 되다. post" fetchpriority="high" width="320" height="167" decoding="async" data-nimg="1" src="https://velog.velcdn.com/images/kyleryu/post/97df121d-628f-4ce4-8d80-ad265f6c3f5e/image.png" style="color: transparent;">
+                        </div>
+                    </a>
+                    <div class="PostCard_content__DxJzL">
+                        <a href="https://velog.io/@hyemin916/주니어일-때-풀스택을-하면-좋은-이유" class="VLink_block__Uwj4P PostCard_styleLink__DYahQ">
+                            <h4 class="PostCard_h4__Yj8PZ utils_ellipsis__M_m5g">주니어일 때 풀스택을 하면 좋은 이유</h4>
+                            <div class="PostCard_descriptionWrapper__x6u1q">
+                                <p class="">'풀스택 개발자'라는 표현을 쓰면 '풀스택은 잡부다.', '진정한 풀스택은 없다.'와 같은 부정적인 반응을 많이 보게 된다. 그런 반응을 보면 풀스택이라는 표현은 좀 더 조심스럽게 써야 하나?라는 생각이 든다. </p>
+                            </div>
+                        </a>
+                        <div class="PostCard_subInfo__aMAtH">
+                                <span>1일 전</span>
+                                <span class="PostCard_separator__Gr24v">·</span>
+                                <span>0개의 댓글</span>
+                        </div>
+                    </div>
+                    <div class="PostCard_footer__CONJG">
+                        <a href="https://velog.io/@hyemin916" class="VLink_block__Uwj4P PostCard_userInfo__yKp_g">
+                            <img alt="user thumbnail of hyemin916" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" src="https://velog.velcdn.com/images/hyemin916/profile/593cf1c8-283b-4a9d-8fa0-e523b2ef7e21/image.jpeg" style="color: transparent;">
+                            <span>by <b>hyemin916</b></span>
+                        </a>
+                        <div class="PostCard_likes__pWcUv">
+                            <svg viewBox="0 0 24 24">
+                                <path fill="currentColor" d="m18 1-6 4-6-4-6 5v7l12 10 12-10V6z"></path>
+                            </svg>12
+                        </div>
+                    </div>
+                </div>
+                <!--카드 반복(TEXT) End-->
+
+            </div>
+        </main>
+    </div>
+
+
+
+    <table class="table">
+        <thead class="table-dark">
+            <tr class="text-center">
+			    <th>번호</th>
+			    <th style="width:50%">제목</th>
+			    <th>글쓴이</th>
+			    <th>작성일시</th>
+			</tr>
+        </thead>
+        <tbody>
+            <tr class="text-center" th:each="question, loop : ${paging}">
+			    <td th:text="${paging.getTotalElements - (paging.number * paging.size) - loop.index}"></td>
+			    <td class="text-start">
+			        <a th:href="@{|/question/detail/${question.id}|}" th:text="${question.subject}"></a>
+			        <span class="text-danger small ms-2" th:if="${#lists.size(question.answerList) > 0}"
+			            th:text="${#lists.size(question.answerList)}">
+			        </span>
+			    </td>
+			    <td><span th:if="${question.author != null}" th:text="${question.author.username}"></span></td>
+			    <td th:text="${#temporals.format(question.createDate, 'yyyy-MM-dd HH:mm')}"></td>
+			</tr>
+        </tbody>
+    </table>
+    <!-- 페이징처리 시작 -->
+    <div th:if="${!paging.isEmpty()}">
+        <ul class="pagination justify-content-center">
+            <li class="page-item" th:classappend="${!paging.hasPrevious} ? 'disabled'">
+                <a class="page-link" href="javascript:void(0)" th:data-page="${paging.number-1}">
+                    <span>이전</span>
+                </a>
+            </li>
+            <li th:each="page: ${#numbers.sequence(0, paging.totalPages-1)}"
+            	th:if="${page >= paging.number-5 and page <= paging.number+5}"
+                th:classappend="${page == paging.number} ? 'active'" 
+                class="page-item">
+                <a th:text="${page}" class="page-link" href="javascript:void(0)" th:data-page="${page}"></a>
+            </li>
+            <li class="page-item" th:classappend="${!paging.hasNext} ? 'disabled'">
+                <a class="page-link" href="javascript:void(0)" th:data-page="${paging.number+1}">
+                    <span>다음</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 페이징처리 끝 -->
+    <form th:action="@{/question/list}" method="get" id="searchForm">
+        <input type="hidden" id="kw" name="kw" th:value="${kw}">
+        <input type="hidden" id="page" name="page" th:value="${paging.number}">
+    </form>
+</div>
+<script layout:fragment="script" type='text/javascript'>
+const page_elements = document.getElementsByClassName("page-link");
+Array.from(page_elements).forEach(function(element) {
+    element.addEventListener('click', function() {
+        document.getElementById('page').value = this.dataset.page;
+        document.getElementById('searchForm').submit();
+    });
+});
+const btn_search = document.getElementById("btn_search");
+btn_search.addEventListener('click', function() {
+    document.getElementById('kw').value = document.getElementById('search_kw').value;
+    document.getElementById('page').value = 0;  // 검색버튼을 클릭할 경우 0페이지부터 조회한다.
+    document.getElementById('searchForm').submit();
+});
+</script>
+</html>

@@ -1,0 +1,24 @@
+<nav th:fragment="navbarFragment" class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+
+    <div class="container-fluid">
+
+        <div class="col-md-3 mb-2 mb-md-0">
+                <a href="/" class="nav-link px-2 link-secondary">IDT Log</a>
+        </div>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-2">영업</a></li>
+            <li><a href="#" class="nav-link px-2">제안</a></li>
+            <li><a href="#" class="nav-link px-2">기술</a></li>
+            <li><a href="#" class="nav-link px-2">About</a></li>
+         </ul>
+
+        <div class="col-md-3 text-end">
+            <a type="button" class="btn btn-outline-primary me-2" sec:authorize="isAnonymous()" th:href="@{/user/login}">Login</a>
+            <a type="button" class="btn btn-outline-primary me-2" sec:authorize="isAuthenticated()" th:href="@{/user/logout}">Logout</a>
+            <a type="button" class="btn btn-primary" th:href="@{/user/signup}" >Sign-up</a>
+        </div>
+
+    </div>
+</nav>
